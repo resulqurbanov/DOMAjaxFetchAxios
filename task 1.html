@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Name Username</title>
+</head>
+
+
+<body>
+    <input type="metn" id="Id">
+    <input type="metn" id="Ad">
+    <input type="metn" id="Soyad">
+    <button id="bt1"> add list item </button>
+    <br>
+
+
+    <hr>
+    <table id="table">
+        <h2>Id Ad Soyad</h2>
+    </table>
+
+
+    <hr>
+    <script>
+        
+        var table = document.getElementById("table")
+       
+        document.getElementById("bt1").addEventListener("click", function () {
+            var tr = document.createElement("tr")
+            tr.innerHTML = `<th>${Id.value}</th>
+                            <th>${Ad.value}</th>
+                            <th>${Soyad.value}</th>`
+            table.appendChild(tr);
+
+        })
+
+
+    </script>
+    <hr>
+</body>
+
+</html>
